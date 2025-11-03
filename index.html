@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex Insights</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        color: white;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #0d6efd !important;
+      }
+      .card {
+        background-color: #1c1f26;
+        border: none;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+      }
+      footer {
+        background-color: #101318;
+        color: #aaa;
+        padding: 20px 0;
+        text-align: center;
+      }
+      footer a {
+        color: #0d6efd;
+        text-decoration: none;
+      }
+      
+      .carousel-item {
+        height: 80vh; /* Adjust height as needed */
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        color: white;
+      }
+
+      .carousel-caption-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      }
+
+      .carousel-caption-bottom h5 {
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+
+      .carousel-caption-bottom p {
+        font-size: 1rem;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="./images/logo.png"
+            alt=""
+            class="img-fluid"
+            style="max-width: 100px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Travel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact-Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="text-center py-5">
+      <div class="container">
+        <h1 class="fw-bold">
+          Your Daily Dose of Insight, Innovation, and Inspiration.
+        </h1>
+        <p class="lead text-light">
+          Dive into a space where curiosity meets creativity. Whether you’re
+          passionate about tech innovations, business trends, global cuisines,
+          sports highlights, or travel adventures, we’ve got something for every
+          curious mind
+        </p>
+      </div>
+    </header>
+
+    <div class="top-stories w-full text-center ">
+        <h2 class="fw-bold">Top Stories of the week</h2>
+
+        <div
+      id="topStoriesCarousel"
+      class="carousel slide m-5"
+      data-bs-ride="carousel"
+      data-bs-interval="4000"
+    >
+      <div class="carousel-inner">
+        <div
+          class="carousel-item active "
+          style="
+            background-image: url('./images/odi-champs.png');
+          "
+        >
+          <div class="carousel-caption-bottom text-white fw-bold">
+            <h5>Champions of Heart and Glory</h5>
+            <p>
+              The Indian women’s cricket team etched their name in history with a sensational World Cup final win — a triumph of skill, spirit, and sheer determinations.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="carousel-item"
+          style="
+            background-image: url('./images/protein.jpg');
+          "
+        >
+          <div class="carousel-caption-bottom text-white fw-bold">
+            <h5>Plant Power: Best Veg Protein Picks</h5>
+            <p>Discover wholesome, plant-based foods packed with protein — from lentils and chickpeas to tofu and quinoa — for a healthy, balanced lifestyle</p>          
+            </div>
+        </div>
+
+        <div
+          class="carousel-item"
+          style="
+            background-image: url('./images/shakleshpur.webp');
+          "
+        >
+          <div class="carousel-caption-bottom">
+            <h5>Where History Meets the Hills: Manjarabad Fort, Sakleshpur</h5>
+            <p>
+              Experience the perfect blend of scenic beauty and ancient architecture as you explore this iconic fort amidst Karnataka’s lush green landscapes.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="carousel-item"
+          style="
+            background-image: url('./images/ai-boom.png');
+          "
+        >
+          <div class="carousel-caption-bottom">
+            <h5>Beyond Automation: The Untold Power of AI</h5>
+            <p>
+              As AI integrates deeper into technology and business, its unseen capabilities promise to revolutionize how the world works, thinks, and creates.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#topStoriesCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#topStoriesCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    </div>
+
+    <section class="container my-5">
+      <h3 class="text-center m-4">Explore Different Categories</h3>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card p-3 h-100">
+            <img
+              src="./images/tech.jpg"
+              class="card-img-top rounded"
+              alt="Coding Blog"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-info">Technology Blogs</h5>
+              <p class="card-text text-light">
+                  Explore trends, gadgets, and innovations shaping the digital future. 
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3 h-100">
+            <img
+              src="./images/sports.jpg"
+              class="card-img-top rounded"
+              alt="Coding Blog"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-info">Sports Blogs</h5>
+              <p class="card-text text-light">
+                Stay updated with the latest matches, moments, and motivation from the world of sports
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card p-3 h-100">
+            <img
+              src="./images/food.jpg"
+              class="card-img-top rounded"
+              alt="Web Design"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-info">
+                Food Blogs
+              </h5>
+              <p class="card-text text-light">
+                Taste the flavors, recipes, and inspirations that make every bite memorable.
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card p-3 h-100">
+            <img
+              src="./images/travel.jpg"
+              class="card-img-top rounded"
+              alt="Cloud Blog"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-info">
+                Travel Blogs
+              </h5>
+              <p class="card-text text-light">
+Discover hidden gems, travel tips, and stories from around the world.
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Apex Insights | Blogs posted with ❤️</p>
+
+        Follow us on
+
+      <p><a href="#">LinkedIn</a> · <a href="#">Instagram</a> ·
+        <a href="#">Twitter</a></p>
+    </footer>
+  </body>
+</html>
