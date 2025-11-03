@@ -26,8 +26,6 @@ It brings together engaging visuals, smooth navigation, and a fully adaptive lay
 
 ## 🌍 Live Demo
 
-🔗 [View on GitHub Pages](https://your-username.github.io/apex-insights-blog/)
+🔗 [View on GitHub Pages](https://pmg030705.github.io/EL-Blog-Page/)
 
 ---
-
-**© 2025 Apex Insights** — Designed with ❤️ using Bootstrap 5
